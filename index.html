@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Business Name - Delivering Quality Solutions">
+    <title>Your Business</title>
+
+    <!-- Link to Google Fonts (for modern typography) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Link to Bootstrap CSS (for responsive design) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Link to AOS (for smooth animations) -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #1E2A3A;">
+        <div class="container">
+            <a class="navbar-brand" href="#">Your Business</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <header id="home" class="hero d-flex align-items-center justify-content-center text-center text-white"
+            style="background: linear-gradient(to right, #1E2A3A, #35415C); height: 80vh;" data-aos="fade-up">
+            <div class="container">
+                <h1 class="display-3 fw-bold">Innovative Business Solutions</h1>
+                <p class="lead mb-4">Empowering your business with cutting-edge technology and strategies.</p>
+                <a href="#services" class="btn btn-primary btn-lg">Our Services</a>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" class="py-5 bg-light" data-aos="fade-up">
+            <div class="container text-center">
+                <h2>About Us</h2>
+                <p class="lead">We provide reliable, efficient, and custom solutions to elevate your business
+                    performance.</p>
+                <a href="#services" class="btn btn-primary">Explore Our Services</a>
+            </div>
+        </section>
+
+        <!-- Image Slider -->
+        <section id="slider" class="py-5">
+            <div class="container">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/image0_0.jpg" class="d-block w-100"
+                                alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/image1_0.jpg" class="d-block w-100"
+                                alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/image0_0 (1).jpg" class="d-block w-100"
+                                alt="Slide 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-5" style="background-color: #F4F7FB;" data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Services</h2>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="service-card" data-bs-toggle="modal" data-bs-target="#serviceModal"
+                            onclick="openModal('Web Development', 'We provide state-of-the-art web development services including responsive design, performance optimization, and SEO integration.')">
+                            <i class="fas fa-code service-icon"></i>
+                            <h3>Web Development</h3>
+                            <p>We create responsive, user-centric websites optimized for performance.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card" data-bs-toggle="modal" data-bs-target="#serviceModal"
+                            onclick="openModal('SEO Optimization', 'Our SEO experts will improve your website rankings and drive organic traffic through on-page and off-page SEO strategies.')">
+                            <i class="fas fa-search service-icon"></i>
+                            <h3>SEO Optimization</h3>
+                            <p>Improve your search rankings and reach your audience with our SEO services.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card" data-bs-toggle="modal" data-bs-target="#serviceModal"
+                            onclick="openModal('Digital Marketing', 'We offer comprehensive digital marketing services such as social media marketing, email campaigns, and paid ads for business growth.')">
+                            <i class="fas fa-bullhorn service-icon"></i>
+                            <h3>Digital Marketing</h3>
+                            <p>Engage your customers through impactful and targeted marketing campaigns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 bg-dark text-white">
+            <div class="container text-center">
+                <h2>Get In Touch</h2>
+                <p>If you’re ready to take your business to the next level, we’re here to help!</p>
+                <a href="mailto:info@yourbusiness.com" class="btn btn-primary">Email Us</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark text-white py-4">
+        <p>&copy; 2024 Your Business. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- AOS JS for animations -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS animations
+        function openModal(title, description) {
+            document.getElementById('modalServiceTitle').innerText = title;
+            document.getElementById('modalServiceDescription').innerText = description;
+        }
+    </script>
+    <!-- Link to external script.js -->
+    <script src="assets/js/script.js"></script>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">↑</button>
+</body>
+
+</html>
+<!-- Modal for Service Details -->
+<div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="serviceModalLabel">Service Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h3 id="modalServiceTitle">Service Title</h3>
+                <p id="modalServiceDescription">Service description goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
